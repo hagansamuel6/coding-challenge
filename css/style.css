@@ -1,0 +1,56 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --active: #85b89f;
+  --main-bg-color: #f3f4f6;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 100px;
+  background-color: gray;
+  box-shadow: 5px 10px 10px #888888;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.sidebar {
+  flex-basis: 150px;
+  flex-grow: 1;
+  background-color: white;
+  color: #fff;
+  padding: 20px;
+  height: 100%;
+}
+.sidebar__main_nav {
+  color: var(--active);
+}
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+.sidebar ul li a {
+  color: gray;
+  font-size: 20px;
+  text-decoration: none;
+}
+.sidebar ul li a:hover {
+  color: var(--active);
+}
+
+.main {
+  flex-grow: 4;
+  background-color: var(--main-bg-color);
+  padding: 20px;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

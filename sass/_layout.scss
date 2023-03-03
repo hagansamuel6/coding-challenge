@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.sidebar {
+  flex-basis: 150px;
+  flex-grow: 1;
+  background-color: white;
+  color: #fff;
+  padding: 20px;
+  height: 100%;
+
+  &__main_nav {
+    color: var(--active);
+  }
+
+  ul li {
+    margin-bottom: 10px;
+    a {
+      color: gray;
+      font-size: 20px;
+
+      text-decoration: none;
+
+      &:hover {
+        color: var(--active);
+      }
+    }
+  }
+}
+
+.main {
+  flex-grow: 4;
+  background-color: var(--main-bg-color);
+  padding: 20px;
+  height: 100%;
+}
