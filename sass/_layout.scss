@@ -37,3 +37,74 @@
   padding: 20px;
   height: 100%;
 }
+
+.farmer_panel {
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  align-items: center;
+  border-radius: 5px;
+  // padding-top: 25px;
+}
+
+.farmers_panel_content {
+  margin-left: 40px;
+  // padding-top: 15px;
+  padding-bottom: 40px;
+
+  h3{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 5px;
+   
+  }
+
+  p {
+    font-size: 18px;
+    margin-top: 0;
+    color: var(--sm-text-color);
+  }
+}
+
+.book-icon {
+  background-color: var(--white);
+  margin-left: 35px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 2.5px 4px 8px 12px #f2f2f2;
+}
+
+.personal_details_panel {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+
+  h5 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 18px;
+    padding-top: 20px;
+  }
+
+  div ul {
+    margin-bottom: 0;
+    padding-left: 20px;
+
+    li {
+      display: inline-block;
+      margin-right: 18px;
+      padding-bottom: 18px;
+  
+      &:nth-child(2) {
+        border-bottom: 2px solid green;
+      }
+    }
+  
+  }
+  
+  
+
+
+  .tabbed_section {
+    border-bottom: 2px solid gray;
+  }
+}
