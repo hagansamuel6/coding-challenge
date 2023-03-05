@@ -1,0 +1,59 @@
+.personal_details_form {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+
+
+    .picture_upload {
+        margin-left: 50px;
+        
+
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid var(--green);
+        }
+    }
+
+    .first_section {
+        margin-left: 90px;
+    }
+
+    .second_section {
+        margin-left: 30px;
+    }
+
+    .third_section {
+        margin-left: 30px;
+    }
+
+    .fourth_section {
+        margin-left: 30px;
+    }
+
+    label {
+        display: block;
+        font-size: var(--small-fs);
+        font-weight: var(--nfw);
+    }
+
+    input {
+        height: 30px;
+        width: 200px;
+        border: 2px solid var(--main-bg-color);
+        border-radius: 5px;
+
+        margin: 10px 0 15px 0;
+
+        &:focus{
+            border: 1px solid var(--green);
+            outline: 1px solid var(--green);
+        }
+    }
+
+    textarea {
+        border: 2px solid var(--main-bg-color);
+        border-radius: 5px;
+    }
+}

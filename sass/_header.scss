@@ -1,7 +1,89 @@
 nav {
-    height: 100px;
-    background-color: gray;
+    height: 90px;
+    background-color: var(--title-bar-color
+    );
     box-shadow: 5px 10px 10px #888888;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logos_wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40px;
+
+        .sdcl {
+            margin-left: 90px;
+        }
+    }
+
+    .input_tools {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 40px;
+
+        .search_input {
+            background-color: var(--light-white);
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+            margin-right: 25px;
+        }
+
+        .header_tool {
+            padding: 7px;
+            border-radius: 10px;
+            margin-right: 15px;
+            img {
+
+            }
+        }
+
+        .language {
+            margin-right: 30px;
+            background-color: white;
+        }
+
+        .header_profile_info {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            .profile-image{
+                width: 50px;
+                height: 50px;
+                margin-right: 25px;
+                border-radius: 50%;
+            }
+            h5 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: 600;
+                font-size: var(--body-fs-s);
+            }
+
+            p{
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .lamp_light {
+        background-color: var(--black);
+    }
+
+    .language {
+        background-color: var(--light-gray);
+    }
+
+    .profile-image {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
 }
+
+
 

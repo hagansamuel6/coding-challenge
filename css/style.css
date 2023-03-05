@@ -1,25 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --blue: #1e90ff;
   --white: #ffffff;
+  --light-white: #f2f4f6;
   --active: #85b89f;
   --main-bg-color: #f3f4f6;
   --light-gray: #aeaeae;
   --green: #22a45d;
   --sm-text-color: #666666;
   --border-radius: 5px;
+  --info-panel-color: #f6f6f8;
+  --black: #000000;
+  --border-radius-md: 5px;
+  --small-fs: 12px;
+  --body-fs-s:15px;
+  --body-fs-l: 20px;
+  --heading-fs-s:25px;
+  --heading-fs-l: 30px;
+  --nfw: 400;
+  --bfw: 600;
+  --title-bar-color: #fafbfc;
+  --selected-profiles: #f3f3fc;
 }
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
-  height: 100px;
-  background-color: gray;
+  height: 90px;
+  background-color: var(--title-bar-color);
   box-shadow: 5px 10px 10px #888888;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logos_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+nav .logos_wrapper .sdcl {
+  margin-left: 90px;
+}
+nav .input_tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+}
+nav .input_tools .search_input {
+  background-color: var(--light-white);
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 25px;
+}
+nav .input_tools .header_tool {
+  padding: 7px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+nav .input_tools .language {
+  margin-right: 30px;
+  background-color: white;
+}
+nav .input_tools .header_profile_info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+nav .input_tools .header_profile_info .profile-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+  border-radius: 50%;
+}
+nav .input_tools .header_profile_info h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: var(--body-fs-s);
+}
+nav .input_tools .header_profile_info p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+nav .lamp_light {
+  background-color: var(--black);
+}
+nav .language {
+  background-color: var(--light-gray);
+}
+nav .profile-image {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 .container {
@@ -37,18 +117,23 @@ nav {
   height: 100%;
 }
 .sidebar__main_nav {
-  color: var(--active);
+  font-weight: var(--nfw);
+  color: var(--green);
+  margin-left: 30px;
+}
+.sidebar ul {
+  margin-top: 30px;
 }
 .sidebar ul li {
   margin-bottom: 10px;
 }
 .sidebar ul li a {
-  color: gray;
-  font-size: 20px;
+  color: var(--sm-text-color);
+  font-size: var(--body-fs-l);
   text-decoration: none;
 }
 .sidebar ul li a:hover {
-  color: var(--active);
+  color: var(--green);
 }
 
 .main {
@@ -71,12 +156,12 @@ nav {
   padding-bottom: 40px;
 }
 .farmers_panel_content h3 {
-  font-size: 25px;
-  font-weight: 300;
+  font-size: var(--heading-fs-s);
+  font-weight: 400;
   margin-bottom: 5px;
 }
 .farmers_panel_content p {
-  font-size: 18px;
+  font-size: var(--body-fs-s);
   margin-top: 0;
   color: var(--sm-text-color);
 }
@@ -85,7 +170,7 @@ nav {
   background-color: var(--white);
   margin-left: 35px;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 2.5px 4px 8px 12px #f2f2f2;
 }
 
@@ -94,8 +179,8 @@ nav {
   border-radius: var(--border-radius);
 }
 .personal_details_panel h5 {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: var(--heading-fs-s);
+  font-weight: 600;
   margin-left: 18px;
   padding-top: 20px;
 }
@@ -113,6 +198,57 @@ nav {
 }
 .personal_details_panel .tabbed_section {
   border-bottom: 2px solid gray;
+}
+
+.personal_details_form {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.personal_details_form .picture_upload {
+  margin-left: 50px;
+}
+.personal_details_form .picture_upload img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--green);
+}
+.personal_details_form .first_section {
+  margin-left: 90px;
+}
+.personal_details_form .second_section {
+  margin-left: 30px;
+}
+.personal_details_form .third_section {
+  margin-left: 30px;
+}
+.personal_details_form .fourth_section {
+  margin-left: 30px;
+}
+.personal_details_form label {
+  display: block;
+  font-size: var(--small-fs);
+  font-weight: var(--nfw);
+}
+.personal_details_form input {
+  height: 30px;
+  width: 200px;
+  border: 2px solid var(--main-bg-color);
+  border-radius: 5px;
+  margin: 10px 0 15px 0;
+}
+.personal_details_form input:focus {
+  border: 1px solid var(--green);
+  outline: 1px solid var(--green);
+}
+.personal_details_form textarea {
+  border: 2px solid var(--main-bg-color);
+  border-radius: 5px;
+}
+
+.save-button {
+  background-color: var(--green);
 }
 
 /*# sourceMappingURL=style.css.map */
