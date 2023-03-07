@@ -5,7 +5,7 @@
 }
 
 .sidebar {
-  flex-basis: 150px;
+  flex-basis: 200px;
   flex-grow: 1;
   background-color: white;
   color: #fff;
@@ -23,6 +23,7 @@
 
     li {
       margin-bottom: 10px;
+      cursor: pointer;
       a {
         color: var(--sm-text-color);
         font-size: var(--body-fs-l);
@@ -48,12 +49,13 @@
   background-color: white;
   align-items: center;
   border-radius: 5px;
-  // padding-top: 25px;
+  margin-top: 30px;
+  padding-bottom: 25px;
 }
 
 .farmers_panel_content {
   margin-left: 40px;
-  // padding-top: 15px;
+  padding-top: 15px;
   padding-bottom: 40px;
 
   h3{
@@ -64,7 +66,7 @@
   }
 
   p {
-    font-size: var(--body-fs-s);
+    font-size: var(--body-fs-l);
     margin-top: 0;
     color: var(--sm-text-color);
   }
@@ -72,9 +74,9 @@
 
 .book-icon {
   background-color: var(--white);
-  margin-left: 35px;
+  margin-left: 40px;
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
   box-shadow: 2.5px 4px 8px 12px #f2f2f2;
 }
 
@@ -98,6 +100,7 @@
       display: inline-block;
       margin-right: 18px;
       padding-bottom: 18px;
+      cursor: pointer;
   
       &:nth-child(2) {
         border-bottom: 2px solid green;

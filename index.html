@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Coding challenge</title>
   </head>
   <body>
     <header>
@@ -22,19 +22,22 @@
         </div>
 
         <div class="input_tools">
-          <div>
+          <div class="search-wrapper">
             <input
               class="search_input"
               type="text"
-              placeholder="type to search"
+              placeholder="Type to search"
             />
+            <div class="search-icon">
+                <img class="" src="/assets/materials/search_.png" width="30px" height="30px" alt="">
+            </div>
           </div>
 
           <div class="header_tool lamp_light">
             <img
               src="assets/materials/lamp_light.png"
-              width="20px"
-              height="20px"
+              width="25px"
+              height="25px"
               alt=""
             />
           </div>
@@ -42,8 +45,8 @@
           <div class="header_tool language">
             <img
               src="assets/materials/language.png"
-              width="20px"
-              height="20px"
+              width="25px"
+              height="25px"
               alt=""
             />
           </div>
@@ -82,8 +85,8 @@
           <div class="book-icon">
             <img
               src="assets/materials/agenda.png"
-              width="30px"
-              height="30px"
+              width="45px"
+              height="45px"
               alt=""
             />
           </div>
@@ -111,16 +114,36 @@
 
             <div class="personal_details_form">
               <form action="" class="personal_details_form">
-                <div>
+                <div class="image-uploads-section">
                   <!-- picture upload -->
                   <div class="picture_upload">
                     <img src="assets/user_images/man.jpg" alt="" />
                   </div>
                   <!-- ./end-picture upload -->
 
+                  <div class="uploads-wrapper">
+                    <div class="upload-items upload-first">
+                        <div class="upload-icon-wrapper">
+                            <img class="upload-buttons" src="/assets/materials/dslr-camera.png" alt="" width="40"  height="40" srcset="">
+                        </div>
+                        <p>Take a photo</p>
+                    </div>
+                    <div class="upload-items upload-second">
+                        <input id="hidden-upload-btn" class="image_upload" type="file" accept=".png,.jpg,.jpeg" style="display:none;">
+                        <div class="upload-icon-wrapper">
+                            <img id="upload-photo" class="upload-buttons" src="/assets/materials/cloud-computing.png" alt="" width="40"  height="40" srcset="">
+                        </div>
+                        <p>Upload photo</p>
+                    </div>
+                  </div>
+
                   <!-- select gender -->
-                  <div>
-                    <label for="gender">Gender</label>
+                  <div class="gender-selection-wrapper">
+                    <label class="gender" for="gender">Gender</label>
+                    <div class="gender-select">
+                        <input class="male-item" type="radio" name="gender" value="male" id="male"> <label for="male">Male</label> 
+                        <input class="female-item" type="radio" name="gender"  value="femaile" id="female"> <label for="female">Female</label> 
+                    </div>
                   </div>
                   <!-- ./select gender -->
                 </div>
@@ -129,7 +152,7 @@
                 <div class="first_section">
                   <div>
                     <label for="name">Name</label>
-                    <input id="name" type="text" />
+                    <input required id="name" type="text" />
                   </div>
                   <div>
                     <label for="birth_place">Birth place</label>
@@ -193,8 +216,8 @@
                   </div>
 
                   <div>
-                    <button class="reset-button">Reset</button>
-                    <button class="save-button">Save</button>
+                    <button type="reset" class="btn reset-button">Reset</button>
+                    <button type="submit" class="btn save-button">Save</button>
                   </div>
                 </div>
                 <!--end fourth part-->
@@ -206,5 +229,7 @@
       </div>
       <!-- ./main dashboard end -->
     </div>
+
+    <script src="/js/main.js"></script>    
   </body>
 </html>
