@@ -196,10 +196,6 @@ nav .profile-image {
 .personal_details_panel div ul li:nth-child(2) {
   border-bottom: 2px solid green;
 }
-.personal_details_panel .tabbed_section {
-  border-bottom: 2px solid gray;
-}
-
 .personal_details_form {
   display: flex;
   justify-content: flex-start;
@@ -224,6 +220,9 @@ nav .profile-image {
   margin-left: 30px;
 }
 .personal_details_form .fourth_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: 30px;
 }
 .personal_details_form label {
@@ -247,8 +246,19 @@ nav .profile-image {
   border-radius: 5px;
 }
 
-.save-button {
+.reset-button {
+  color: var(--white);
   background-color: var(--green);
+  padding: 3px 10px 3px 10px;
+  border: none;
+  margin-left: 50px;
+}
+
+.save-button {
+  background-color: var(--white);
+  color: var(--green);
+  padding: 3px 10px 3px 10px;
+  border: 1px solid var(--green);
 }
 
 /*# sourceMappingURL=style.css.map */

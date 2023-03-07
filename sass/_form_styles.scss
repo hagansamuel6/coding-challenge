@@ -29,6 +29,9 @@
     }
 
     .fourth_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin-left: 30px;
     }
 
